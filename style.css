@@ -16,6 +16,6 @@ body{
 
 }
 .calculator{
-    flex-direction:column;
+    flex-direction:row;
     margin: auto;
 }

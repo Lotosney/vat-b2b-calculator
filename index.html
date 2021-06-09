@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Kalkulator VAT</title>
 </head>
+
 <body>
     <div class="main-container">
-        <div class="title"> 
-    <h1> Kalkulator VAT</h1>
-</div>
-<div class="calculator">
-    <div>
-        <label for="vat_rate">Stopa procentowa VAT </label>
-        <input type="number"  id="vat_rate"  value='23'>
-        </div>         
-        <div>
-        <label for="net_price">Kwota Netto (bez VAT), €</label>
-        <input type="number"  id="net_price"  value>
+        <div class="title">
+            <h1> Kalkulator VAT</h1>
         </div>
-        <div>
-        <label for="gross_price">Kwota Brutto (wliczając VAT), €</label>
-        <input type="number"  id="gross_price"  value>
+        <div class="calculator">
+            <div>
+                <label for="vat-rate">Stopa procentowa VAT </label>
+                <input type="number" id="vat-rate" placeholder="0.00">
+            </div>
+            <div>
+                <label for="net-price">Kwota Netto (bez VAT)</label>
+                <input type="number" id="net-price" placeholder="0.00" value>
+            </div>
+   
+            <div>
+                <label for="inc-amount">Kwota Brutto (wliczając VAT)</label>
+                <input type="number" id="inc-amount" placeholder="0.00" disabled = true value>
+            </div>
+          
+            <div>
+                <label for="vat_amount">Kwota VAT</label>  
+                <input type="number" id="vat-amount" placeholder="0.00" disabled = true >
+            </div>
+            <button type = "button" class = "main-btn" id = "calc-btn" >Oblicz brutto</button>
         </div>
-        <br>
-        <div>
-        <label for="tax_amount">Kwota VAT</label>
-        <input type="number"  id="tax_amount"  value>
-        </div>
-</div>
     </div>
 </body>
+<script src="script.js"></script>
+
 </html>
