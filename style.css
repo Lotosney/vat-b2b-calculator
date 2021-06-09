@@ -1,0 +1,21 @@
+body{
+ background-color: rgb(255, 255, 255);
+}
+
+.main-container{
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+    width: 60%;
+    background-color:rgb(43, 39, 39);
+    color:aliceblue;
+    border-radius:5%
+}
+.title{
+    margin: auto;
+
+}
+.calculator{
+    flex-direction:column;
+    margin: auto;
+}
